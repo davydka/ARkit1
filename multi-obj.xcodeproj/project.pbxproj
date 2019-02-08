@@ -15,6 +15,12 @@
 		7F915089220B46FC007A9ABF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F915087220B46FC007A9ABF /* LaunchScreen.storyboard */; };
 		7F915094220B46FD007A9ABF /* multi_objTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F915093220B46FD007A9ABF /* multi_objTests.swift */; };
 		7F91509F220B46FD007A9ABF /* multi_objUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F91509E220B46FD007A9ABF /* multi_objUITests.swift */; };
+		7F9150AE220C87AD007A9ABF /* wood.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7F9150AC220C87AC007A9ABF /* wood.jpeg */; };
+		7F9150AF220C87AD007A9ABF /* earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F9150AD220C87AD007A9ABF /* earth.jpg */; };
+		7F9150B1220C8D01007A9ABF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9150B0220C8D01007A9ABF /* Extensions.swift */; };
+		7F9150B3220CF6F9007A9ABF /* OverlayPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9150B2220CF6F9007A9ABF /* OverlayPlane.swift */; };
+		7F9150B5220DD477007A9ABF /* overlay_grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F9150B4220DD477007A9ABF /* overlay_grid.png */; };
+		7F9150B7220E1E0F007A9ABF /* Hush_3d_Block.dae in Resources */ = {isa = PBXBuildFile; fileRef = 7F9150B6220E1E0F007A9ABF /* Hush_3d_Block.dae */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		7F91509A220B46FD007A9ABF /* multi-objUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "multi-objUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F91509E220B46FD007A9ABF /* multi_objUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = multi_objUITests.swift; sourceTree = "<group>"; };
 		7F9150A0220B46FD007A9ABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F9150AC220C87AC007A9ABF /* wood.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood.jpeg; sourceTree = "<group>"; };
+		7F9150AD220C87AD007A9ABF /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = "<group>"; };
+		7F9150B0220C8D01007A9ABF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7F9150B2220CF6F9007A9ABF /* OverlayPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPlane.swift; sourceTree = "<group>"; };
+		7F9150B4220DD477007A9ABF /* overlay_grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay_grid.png; sourceTree = "<group>"; };
+		7F9150B6220E1E0F007A9ABF /* Hush_3d_Block.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Hush_3d_Block.dae; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +114,16 @@
 				7F91507C220B46FB007A9ABF /* AppDelegate.swift */,
 				7F91507E220B46FB007A9ABF /* art.scnassets */,
 				7F915080220B46FB007A9ABF /* ViewController.swift */,
+				7F9150AD220C87AD007A9ABF /* earth.jpg */,
+				7F9150AC220C87AC007A9ABF /* wood.jpeg */,
 				7F915082220B46FB007A9ABF /* Main.storyboard */,
+				7F9150B6220E1E0F007A9ABF /* Hush_3d_Block.dae */,
 				7F915085220B46FC007A9ABF /* Assets.xcassets */,
 				7F915087220B46FC007A9ABF /* LaunchScreen.storyboard */,
 				7F91508A220B46FC007A9ABF /* Info.plist */,
+				7F9150B4220DD477007A9ABF /* overlay_grid.png */,
+				7F9150B0220C8D01007A9ABF /* Extensions.swift */,
+				7F9150B2220CF6F9007A9ABF /* OverlayPlane.swift */,
 			);
 			path = "multi-obj";
 			sourceTree = "<group>";
@@ -232,9 +250,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F9150AE220C87AD007A9ABF /* wood.jpeg in Resources */,
+				7F9150B7220E1E0F007A9ABF /* Hush_3d_Block.dae in Resources */,
 				7F91507F220B46FB007A9ABF /* art.scnassets in Resources */,
+				7F9150AF220C87AD007A9ABF /* earth.jpg in Resources */,
 				7F915089220B46FC007A9ABF /* LaunchScreen.storyboard in Resources */,
 				7F915086220B46FC007A9ABF /* Assets.xcassets in Resources */,
+				7F9150B5220DD477007A9ABF /* overlay_grid.png in Resources */,
 				7F915084220B46FB007A9ABF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,7 +283,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F915081220B46FB007A9ABF /* ViewController.swift in Sources */,
+				7F9150B1220C8D01007A9ABF /* Extensions.swift in Sources */,
 				7F91507D220B46FB007A9ABF /* AppDelegate.swift in Sources */,
+				7F9150B3220CF6F9007A9ABF /* OverlayPlane.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
