@@ -4,8 +4,8 @@
   <contributor>
    <authoring_tool>SceneKit Collada Exporter v1.0</authoring_tool>
   </contributor>
-  <created>2019-02-08T20:32:05Z</created>
-  <modified>2019-02-08T20:32:05Z</modified>
+  <created>2019-02-08T21:12:44Z</created>
+  <modified>2019-02-08T21:12:44Z</modified>
   <unit meter="1.000000"/>
   <up_axis>Y_UP</up_axis>
  </asset>
@@ -116,11 +116,11 @@
  <library_visual_scenes>
   <visual_scene id="scene8">
    <node id="Lamp" name="Lamp">
-    <matrix>-0.2908646 0.5663931 0.7711008 4.076245 -0.05518897 0.7946723 -0.6045246 5.903862 -0.955171 -0.2183911 -0.1998834 -1.005454 0 0 0 1 </matrix>
+    <matrix>-0.2908646 0.5663931 0.7711008 4.076245 -0.05518894 0.7946723 -0.6045246 5.903862 -0.955171 -0.2183911 -0.1998834 -1.005454 0 0 0 1 </matrix>
     <instance_light url="#Lamp-light"/>
    </node>
    <node id="node9" name="polySurface3">
-    <matrix>1 0 0 0 0 1.788139e-07 -0.9999998 0 0 0.9999998 1.788139e-07 0 0 0 0 1 </matrix>
+    <matrix>1 0 0 0 0 3.576278e-07 -0.9999997 0 0 0.9999997 3.576278e-07 0 0 0 0 1 </matrix>
     <instance_geometry url="#polySurface3">
      <bind_material>
       <technique_common>

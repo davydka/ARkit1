@@ -115,8 +115,28 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             guard let hitResult = hitResults.first else {
                 return
             }
-            addBox(hitResult :hitResult)
+            addModel(hitResult :hitResult)
         }
+    }
+    
+    private func addModel(hitResult :ARHitTestResult) {
+        let thisScene = SCNScene(named: "art.scnassets/Hush_3d_Block.scn")
+        let thisNode = thisScene?.rootNode.childNode(withName: "polySurface3", recursively: true)
+        thisNode?.scale = SCNVector3(0.05, 0.05, 0.05)
+        thisNode?.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
+        thisNode?.physicsBody?.categoryBitMask = BodyType.box.rawValue
+        
+        let material = SCNMaterial()
+        material.diffuse.contents = UIColor.random()
+        
+        thisNode?.geometry?.materials = [material]
+        
+        thisNode?.position = SCNVector3(
+            hitResult.worldTransform.columns.3.x,
+            hitResult.worldTransform.columns.3.y + Float(0.5),
+            hitResult.worldTransform.columns.3.z
+        )
+        self.sceneView.scene.rootNode.addChildNode(thisNode!)
     }
     
     /*
